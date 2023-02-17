@@ -44,8 +44,8 @@
 
   <script>
     function debounce(func, wait = 20, immediate = true) {}
-	  function handleSlide(){
-		var images = document.queryselectorAll('.slide-in');
+	  function addSlide(){
+		var scrolledImages = document.queryselectorAll('.slide-in');
 		images.forEach(function(img){
 			var scrolledHeight =window.scrollY +window.innerHeight -img.height /2;
 			var imageBottomHeight = img.offsetTop + img.height;
